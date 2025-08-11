@@ -1,0 +1,35 @@
+{
+  "name": "rsvp-hub",
+  "version": "1.0.0",
+  "description": "Full-stack RSVP event management system",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "server:start": "cd server && npm start",
+    "client:build": "cd client && npm run build",
+    "test": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "lint": "cd client && npm run lint",
+    "lint:fix": "cd client && npm run lint:fix"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "rsvp",
+    "events",
+    "react",
+    "nodejs",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
